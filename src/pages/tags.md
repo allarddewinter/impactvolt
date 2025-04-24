@@ -8,4 +8,4 @@ eleventyNavigation:
   order: 4
 ---
 
-## All Tags
+## Zoeken op tags

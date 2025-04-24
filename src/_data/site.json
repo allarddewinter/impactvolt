@@ -2,16 +2,13 @@
 	"name": "Example Site",
 	"formspark_id": null,
 	"botpoison_public_key": null,
-	"url": "https://example.chobble.com",
+	"url": "https://impactvolt.nl",
 	"socials": {
-		"Facebook": "https://example.chobble.com",
-		"Instagram": "https://example.chobble.com",
-		"TikTok": "https://example.chobble.com",
-		"Google": "https://example.chobble.com",
-		"WhatsApp": "https://example.chobble.com",
+		"LinkedIn": "https://www.linkedin.com/in/liekegilissen/",
+		"WhatsApp": "https://wa.me/31653469461",
 		"RSS": "/feed.xml"
 	},
 	"sticky_mobile_nav": true,
 	"horizontal_nav": true,
-	"template_repo_url": "https://git.chobble.com/chobble/chobble-template"
+	"template_repo_url": "https://github.com/allarddewinter/impactvolt"
 }

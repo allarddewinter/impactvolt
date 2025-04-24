@@ -1,15 +1,15 @@
 ---
 header_image: placeholder.jpg
-header_text: Products
-meta_description:
-meta_title: Products
+header_text: Diensten
+meta_description: Producten en diensten van ImpactVolT
+meta_title: Diensten
 layout: categories.html
 permalink: "/{{ strings.product_permalink_dir }}/"
 eleventyNavigation:
-  key: Products
+  key: Diensten
   order: 3
 ---
 
-# Our Products
+## Producten en diensten van ImpactVolT
 
-Suspendisse sit amet gravida turpis, ac tincidunt ex. Etiam ac justo elit. Donec libero ex, egestas et tempor non, egestas hendrerit neque.
+Hier vindt u een overzicht van de producten en diensten die ImpactVolT aanbiedt. Van advies tot implementatie, ik help u bij elke stap van uw energietransitie.

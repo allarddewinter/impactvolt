@@ -1,15 +1,14 @@
 ---
 header_image: placeholder.jpg
-header_text: News
-meta_description:
-meta_title: News
+header_text: Nieuws
+meta_description: Nieuws en updates
+meta_title: Nieuws
 
 layout: news-archive.html
 eleventyNavigation:
-  key: News
+  key: Nieuws
   order: 3
 ---
 
-## Congue Ipsum
-
-Integer feugiat iaculis augue, in hendrerit sapien dapibus et. Mauris vitae est auctor, pellentesque nisl.
+## Laatste nieuws en updates
+Hier vindt u de laatste updates en nieuws over ImpactVolT. Blijf op de hoogte van onze activiteiten, evenementen en ontwikkelingen in de energietransitie.

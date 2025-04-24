@@ -1,7 +1,7 @@
 ---
 header_image: placeholder.jpg
-header_text: Example Website
-meta_description: Example site for the Chobble template - an Eleventy site, built on Nix and hosted on Neocities
+header_text: ImpactVolT
+meta_description: ImpactVolT is een consultancybedrijf dat bedrijven helpt bij het realiseren van hun ambities in de energietransitie.
 meta_title: Home
 
 layout: home.html
@@ -11,18 +11,41 @@ eleventyNavigation:
   order: 1
 ---
 
-## This is an example website
+De energiemarkt is complex en constant in beweging. Ik help organisaties succesvol te navigeren in deze dynamische wereld, met strategisch advies, projectmanagement en teamtransformatie.
 
-**It was made by Stef at [Chobble.com](https://chobble.com).** If you'd like a website just like it, [get in touch](/contact/)! I charge a flat hourly fee and will give you the full source code for all work I do.
+## Kort en krachtig: Wat ik doe
 
-You can check out [the source code for this template]({{ site.template_repo_url }}) - it's:
+Ik ben Lieke Gilissen, een ervaren expert in de energiemarkt. Ik help bedrijven hun ambities waar te maken in de energietransitie, of het nu gaat om het verkrijgen van markttoegang, het optimaliseren van processen en handelsstrategieen of het ontwikkelen van nieuwe verdienmodellen op de balanceringsmarkten. Ik combineer diepgaande kennis van de energiemarkt met bewezen leiderschap en een resultaatgerichte aanpak.
 
-- An [Eleventy]({{ site.template_repo_url }}/src/branch/main/.eleventy.js) site
-- Using [mvp.css]({{ site.template_repo_url }}/src/branch/main/src/css/mvp.scss) and semantic HTML
-- Built with Nix and [Forgejo Actions]({{ site.template_repo_url }}/src/branch/main/.forgejo/workflows/neocities.yaml)
-- Hosted on [Neocities](https://neocities.org/site/chobble-example)
-- With a Formspark & Botpoison spam-protected [contact form]({{ site.template_repo_url }}/src/branch/main/src/\_includes/contact-form.html)
-- Using [Turbo](https://turbo.hotwired.dev/) for instant page loads
-- With a [news system]({{ site.template_repo_url }}/src/branch/main/src/\_includes/news-post-list.html)
-- And [products]({{ site.template_repo_url }}/chobble/chobble-template/src/branch/main/src/products) with [galleries]({{ site.template_repo_url }}/src/branch/main/src/\_includes/gallery.html)
-- And social media links in the footer
+## Waarom ImpactVolt?
+
+- Bewezen Expertise: Ik heb ruime ervaring in diverse rollen binnen de energiemarkt, van strategische advisering tot operationeel management.
+- Resultaatgericht: Mijn focus ligt op het behalen van concrete resultaten voor mijn klanten, of het nu gaat om kostenbesparing, efficiëntieverbetering of het realiseren van nieuwe kansen.
+- Flexibele Aanpak: Ik bied mijn diensten aan in verschillende vormen, afgestemd op uw specifieke behoeften: consulting, projectmanagement en teamtransformatie.
+- Heldere Communicatie: Ik maak complexe materie begrijpelijk en vertaal strategie naar concrete actie.
+
+**[Diensten](/products)**
+
+Bekijk het overzicht van mijn diensten en ontdek hoe ik u kan helpen uw specifieke uitdagingen in de energiemarkt aan te pakken.
+
+**[Mijn Ervaring](/about)**
+
+Ontdek mijn uitgebreide ervaring in de energiemarkt, met een beknopt overzicht van mijn belangrijkste rollen en prestaties.
+
+**Wie Is ImpactVolT**
+
+Leer meer over mijn achergrond, mijn visie op de energie transitie en mijn persoonlijke drijfveren.
+
+## Wat de mensen zeggen
+
+> “Lieke is een onverschrokken en zeer vaardige business analist, die met veel energie strategisch kan schakelen, businesscases tot in de puntjes doorgrond en eigenaarschap neemt voor een complete implementatie van complexe producten of diensten in de energie markt”
+>
+> **Folkert Reitsma, CDO Eneco**
+
+> ”Lieke combineert sterke analytische vaardigheden met een grote betrokkenheid bij haar teams en weet moeiteloos de juiste balans te vinden tussen harde en zachte vaardigheden. Haar expertise in de energie- en flexibiliteitsmarkt is uitstekend en ik heb veel van haar geleerd.“
+>
+> **Renee Preenen, Hoofd Financieel Service Centre, Universteit Leiden**
+
+> “Wat Lieke echt onderscheidt, is haar talent om structuur aan te brengen en een heldere visie en strategie te ontwikkelen. Daarnaast is ze niet alleen gericht is op het behalen van resultaten, maar heeft ze oprechte aandacht voor de mensen met wie ze samenwerkt. Ze is praktisch ingesteld, inspirerend en doelgericht.“
+>
+> **Xiomara Essed, Teamlead Eneco**
