@@ -11,7 +11,10 @@ eleventyNavigation:
   order: 1
 ---
 
-De energiemarkt is complex en constant in beweging. Ik help organisaties succesvol te navigeren in deze dynamische wereld, met strategisch advies, projectmanagement en teamtransformatie.
+> “De energiemarkt is complex en constant in beweging. Ik help organisaties succesvol te navigeren in deze dynamische wereld, met strategisch advies, projectmanagement en teamtransformatie.“ 
+> 
+>**Lieke Gilissen**![Lieke Gilissen](images/profiel-1-1024x683.jpg)
+
 
 ## Kort en krachtig: Wat ik doe
 
@@ -32,7 +35,7 @@ Bekijk het overzicht van mijn diensten en ontdek hoe ik u kan helpen uw specifie
 
 Ontdek mijn uitgebreide ervaring in de energiemarkt, met een beknopt overzicht van mijn belangrijkste rollen en prestaties.
 
-**Wie Is ImpactVolT**
+**[Wie Is ImpactVolT](/about)**
 
 Leer meer over mijn achergrond, mijn visie op de energie transitie en mijn persoonlijke drijfveren.
 
