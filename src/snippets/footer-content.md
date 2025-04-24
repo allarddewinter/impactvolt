@@ -1,3 +1,3 @@
-Example Web Design in Prestwich
+**Klaar voor Impact?**
 
-**This template is [Open Source!](https://git.chobble.com/chobble/chobble-template) If you want me to make you a website based on it, hit me up at [Chobble.com](https://chobble.com)**
+Bent u klaar om de volgende stap te zetten in uw energietransitie? Neem dan [contact](https://impactvolt.nl/contact) met mij op voor een vrijblijvend kennismakingsgesprek. Ik denk graag met u mee over de mogelijkheden!
