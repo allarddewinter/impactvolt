@@ -5,3 +5,5 @@ Bent u klaar om de volgende stap te zetten in uw energietransitie? Neem dan cont
 **Telefoon:** [06-53469461](tel:0653469461)
 
 **E-mail:** [lieke.gilissen@gmail.com](mailto:lieke.gilissen@gmail.com)
+
+![impactvolt logo](src\images\impactvolt_logo.png)
