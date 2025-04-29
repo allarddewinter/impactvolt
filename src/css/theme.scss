@@ -126,20 +126,27 @@ footer {
   }
 }
 
+/* Scrollbar styling */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #{$gold-dark} #{$dark-gray};
+  scrollbar-color: var(--color-bg-secondary) var(--color-bg);
+  
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
   
   &::-webkit-scrollbar-track {
-    background: #{$dark-gray};
+    background: var(--color-bg);
+    border-radius: 4px;
   }
   
   &::-webkit-scrollbar-thumb {
-    background-color: #{$gold-dark};
+    background-color: var(--color-bg-secondary); /* Teal color */
     border-radius: 4px;
     
     &:hover {
-      background-color: #{$gold};
+      background-color: var(--color-secondary); /* Yellow color on hover */
     }
   }
 }
