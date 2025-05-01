@@ -11,10 +11,22 @@ eleventyNavigation:
   order: 1
 ---
 
-> “De energiemarkt is complex en constant in beweging. Ik help organisaties succesvol te navigeren in deze dynamische wereld, met strategisch advies, projectmanagement en teamtransformatie.“ 
-> 
->**Lieke Gilissen**![Lieke Gilissen](images/profiel-1-1024x683.jpg)
-
+<div class="impactvolt-flex-container" style="overflow: auto; display: flex; flex-wrap: wrap; align-items: flex-start;">
+  <div class="impactvolt-flex-text" style="float: left; width: 58%;">
+    <blockquote>
+      “De energiemarkt is complex en constant in beweging. Ik help organisaties succesvol te navigeren in deze dynamische wereld, met strategisch advies, projectmanagement en teamtransformatie.“
+      <br><br>
+      <strong>Lieke Gilissen</strong>
+    </blockquote>
+  </div>
+  <div class="impactvolt-flex-image" style="float: right; width: 40%; text-align: right;">
+    <img
+      src="images/profiel-1-1024x683.jpg"
+      alt="Lieke Gilissen"
+      style="max-width: 100%; height: auto; border-radius: 8px;"
+    />
+  </div>
+</div>
 
 ## Kort en krachtig: Wat ik doe
 
