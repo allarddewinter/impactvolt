@@ -1,4 +1,5 @@
-@import url('https://fonts.bunny.net/css?family=montserrat:300,400,500,600,700|open-sans:300,400,600,700&display=swap');
+@use 'sass:math';
+@import url('https://fonts.bunny.net/css?family=montserrat:300,400,500,600,700|montserrat-bold:300,400,600,700&display=swap');
 
 $black: #000000;
 $charcoal: #0c0c14;
@@ -30,7 +31,7 @@ $light-grey: #F2F2F2;    // Light grey background
   --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   
   --font-family-heading: 'Montserrat', sans-serif;
-  --font-family-body: 'Open Sans', sans-serif;
+  --font-family-body: 'Montserrat-Bold', sans-serif;
 }
 
 body {

@@ -2,11 +2,11 @@
 header_image: placeholder.jpg
 header_text: Reviews
 meta_description: Wat de mensen zeggen
-meta_title: Reviews
+meta_title: ImpactVolt - Reviews
 layout: reviews.html
 eleventyNavigation:
   key: Reviews
-  order: 4
+  order: 6
 ---
 
 ## Wat de mensen zeggen

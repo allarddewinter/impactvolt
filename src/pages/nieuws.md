@@ -2,12 +2,12 @@
 header_image: placeholder.jpg
 header_text: Nieuws
 meta_description: Nieuws en updates
-meta_title: Nieuws
+meta_title: ImpactVolT - Nieuws
 
 layout: news-archive.html
 eleventyNavigation:
   key: Nieuws
-  order: 3
+  order: 2
 ---
 
 ## Laatste nieuws en updates
