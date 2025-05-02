@@ -20,7 +20,7 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
 <div class="impactvolt-flex-container" style="overflow: auto; display: flex; flex-wrap: wrap; align-items: flex-start;">
     <div class="impactvolt-flex-text" style="width: 58%;">
         <blockquote>
-            <p style="font-style: normal;"><strong>Eneco Energy Trade | Hoofd Business Operations ([Periode])</strong></p>
+            <p style="font-style: normal;"><strong>Eneco Energy Trade | Hoofd Business Operations (2022 - 2025)</strong></p>
             <ul style="font-style: normal;">
                 <li>Leidinggeven aan de transformatie van de afdeling Business Operations, resulterend in verhoogde efficiëntie, verbeterd werkgeluk en herstelde operationele stabiliteit.</li>
                 <li>Initiëren en begeleiden van cruciale IT-verbeteringen, waaronder de implementatie van CRM, robotica en een nieuwe settlement-applicatie.</li>
@@ -29,14 +29,14 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
         </blockquote>
     </div>
     <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
-        <img src="/images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <img src="\images\logos\eneco.png" alt="Eneco Logo" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>
 
 <div class="impactvolt-flex-container" style="overflow: auto; display: flex; flex-wrap: wrap; align-items: flex-start;">
     <div class="impactvolt-flex-text" style="width: 58%;">
         <blockquote>
-            <p style="font-style: normal;"><strong>Eneco Energy Trade | Business Change Management ([Periode])</strong></p>
+            <p style="font-style: normal;"><strong>Eneco Energy Trade | Business Change Management (2019-2022)</strong></p>
             <ul style="font-style: normal;">
                 <li>Verantwoordelijk voor het stroomlijnen van het change delivery proces, wat leidde tot een aanzienlijke verbetering van de voorspelbaarheid en efficiëntie van implementaties.</li>
                 <li>Aansturen van een omvangrijk team (50 FTE) bij de succesvolle oplevering van nieuwe features en producten, essentieel voor het behouden van een concurrentievoordeel.</li>
@@ -45,14 +45,14 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
         </blockquote>
     </div>
     <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
-        <img src="/images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <img src="\images\logos\eneco.png" alt="Eneco Logo" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>
 
 <div class="impactvolt-flex-container" style="overflow: auto; display: flex; flex-wrap: wrap; align-items: flex-start;">
     <div class="impactvolt-flex-text" style="width: 58%;">
         <blockquote>
-            <p style="font-style: normal;"><strong>Eneco Energy Trade | Business Analist / Projectmanager ([Periode])</strong></p>
+            <p style="font-style: normal;"><strong>Eneco Energy Trade | Business Analist / Projectmanager (2019)</strong></p>
             <ul style="font-style: normal;">
                 <li>Succesvolle implementatie van grootschalige projecten, waaronder windpark Borssele 3/4 (inclusief SCADA-aansturing en aFRR-kwalificatie) en een VPP IT-applicatie.</li>
                 <li>Ontwikkelen en implementeren van biedstrategieën voor Redispatch en kwalificatie/implementatie van mFRRda met boilers, met positieve impact op netstabiliteit en kosten.</li>
@@ -61,14 +61,14 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
         </blockquote>
     </div>
     <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
-        <img src="/images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <img src="\images\logos\eneco.png" alt="Eneco Logo" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>
 
 <div class="impactvolt-flex-container" style="overflow: auto; display: flex; flex-wrap: wrap; align-items: flex-start;">
     <div class="impactvolt-flex-text" style="width: 58%;">
         <blockquote>
-            <p style="font-style: normal;"><strong>Stevin - Senior Consultant ([Periode])</strong></p>
+            <p style="font-style: normal;"><strong>Stevin - Senior Consultant (2018 - 2019)</strong></p>
             <ul style="font-style: normal;">
                 <li>Projectmanagement van complexe projecten binnen het asset management domein van Vitens en het energietrading domein van Eneco, met focus op resultaatgerichtheid.</li>
                 <li>Adviseren van klanten over strategische vraagstukken, gebruikmakend van diepgaande kennis van de energiesector en best practices in projectmanagement.</li>
@@ -77,14 +77,14 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
         </blockquote>
     </div>
     <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
-        <img src="/images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <img src="\images\logos\stevin.png" alt="Stevin Logo" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>
 
 <div class="impactvolt-flex-container" style="overflow: auto; display: flex; flex-wrap: wrap; align-items: flex-start;">
     <div class="impactvolt-flex-text" style="width: 58%;">
         <blockquote>
-            <p style="font-style: normal;"><strong>Nuon - Optimalisatie Asset Performance ([Periode])</strong></p>
+            <p style="font-style: normal;"><strong>Nuon - Optimalisatie Asset Performance (2012 - 2016)</strong></p>
             <ul style="font-style: normal;">
                 <li>Faciliteren van strategische sessies gericht op het verbeteren van asset management, resulterend in concrete verbeterplannen en optimalisaties.</li>
                 <li>Optimaliseren van dispatch-schema's, leidend tot verhoogde efficiëntie en kostenbesparingen in de energieproductie.</li>
@@ -93,6 +93,6 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
         </blockquote>
     </div>
     <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
-        <img src="/images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <img src="\images\logos\vattenfall.png" alt="Vattenfall Logo" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>
