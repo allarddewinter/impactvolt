@@ -18,7 +18,7 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
 ## Rollen & Prestaties
 
 <div class="impactvolt-flex-container" style="overflow: auto; display: flex; flex-wrap: wrap; align-items: flex-start;">
-    <div class="impactvolt-flex-text" style="width: 58%;">
+    <div class="impactvolt-flex-text" style="width: 68%;">
         <blockquote>
             <p style="font-style: normal;"><strong>Eneco Energy Trade | Hoofd Business Operations (2022 - 2025)</strong></p>
             <ul style="font-style: normal;">
@@ -28,13 +28,13 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
             </ul>
         </blockquote>
     </div>
-    <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
+    <div class="impactvolt-flex-image" style="width: 30%; text-align: right;">
         <img src="\images\logos\eneco.png" alt="Eneco Logo" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>
 
 <div class="impactvolt-flex-container" style="overflow: auto; display: flex; flex-wrap: wrap; align-items: flex-start;">
-    <div class="impactvolt-flex-text" style="width: 58%;">
+    <div class="impactvolt-flex-text" style="width: 68%;">
         <blockquote>
             <p style="font-style: normal;"><strong>Eneco Energy Trade | Business Change Management (2019-2022)</strong></p>
             <ul style="font-style: normal;">
@@ -44,13 +44,13 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
             </ul>
         </blockquote>
     </div>
-    <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
+    <div class="impactvolt-flex-image" style="width: 30%; text-align: right;">
         <img src="\images\logos\eneco.png" alt="Eneco Logo" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>
 
 <div class="impactvolt-flex-container" style="overflow: auto; display: flex; flex-wrap: wrap; align-items: flex-start;">
-    <div class="impactvolt-flex-text" style="width: 58%;">
+    <div class="impactvolt-flex-text" style="width: 68%;">
         <blockquote>
             <p style="font-style: normal;"><strong>Eneco Energy Trade | Business Analist / Projectmanager (2019)</strong></p>
             <ul style="font-style: normal;">
@@ -60,13 +60,13 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
             </ul>
         </blockquote>
     </div>
-    <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
+    <div class="impactvolt-flex-image" style="width: 30%; text-align: right;">
         <img src="\images\logos\eneco.png" alt="Eneco Logo" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>
 
 <div class="impactvolt-flex-container" style="overflow: auto; display: flex; flex-wrap: wrap; align-items: flex-start;">
-    <div class="impactvolt-flex-text" style="width: 58%;">
+    <div class="impactvolt-flex-text" style="width: 68%;">
         <blockquote>
             <p style="font-style: normal;"><strong>Stevin - Senior Consultant (2018 - 2019)</strong></p>
             <ul style="font-style: normal;">
@@ -76,13 +76,13 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
             </ul>
         </blockquote>
     </div>
-    <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
+    <div class="impactvolt-flex-image" style="width: 30%; text-align: right;">
         <img src="\images\logos\stevin.png" alt="Stevin Logo" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>
 
 <div class="impactvolt-flex-container" style="overflow: auto; display: flex; flex-wrap: wrap; align-items: flex-start;">
-    <div class="impactvolt-flex-text" style="width: 58%;">
+    <div class="impactvolt-flex-text" style="width: 68%;">
         <blockquote>
             <p style="font-style: normal;"><strong>Nuon - Optimalisatie Asset Performance (2012 - 2016)</strong></p>
             <ul style="font-style: normal;">
@@ -92,7 +92,7 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
             </ul>
         </blockquote>
     </div>
-    <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
+    <div class="impactvolt-flex-image" style="width: 30%; text-align: right;">
         <img src="\images\logos\vattenfall.png" alt="Vattenfall Logo" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>

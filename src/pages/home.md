@@ -42,15 +42,15 @@ kostenbesparing, efficiëntieverbetering of het realiseren van nieuwe kansen.
 consulting, projectmanagement en teamtransformatie.
 * **Heldere Communicatie:** Ik maak complexe materie begrijpelijk en vertaal strategie naar concrete actie.
 
-**[Diensten](/diensten)**
+**[<span style="text-decoration: underline; text-decoration-thickness: .2em; text-decoration-color: #FFCC00;">Diensten</span>](/diensten)**
 
 Bekijk het overzicht van mijn diensten en ontdek hoe ik u kan helpen uw specifieke uitdagingen in de energiemarkt aan te pakken.
 
-**[Mijn Ervaring](/ervaring)**
+**[<span style="text-decoration: underline; text-decoration-thickness: 3px; text-decoration-color: #FFCC00;">Mijn Ervaring</span>](/ervaring)**
 
 Ontdek mijn uitgebreide ervaring in de energiemarkt, met een beknopt overzicht van mijn belangrijkste rollen en prestaties.
 
-**[Wie Is ImpactVolT](/wie-is)**
+**[<span style="text-decoration: underline; text-decoration-thickness: 3px; text-decoration-color: #FFCC00;">Wie Is ImpactVolT</span>](/wie-is)**
 
 Leer meer over mijn achergrond, mijn visie op de energie transitie en mijn persoonlijke drijfveren.
 
