@@ -16,7 +16,7 @@ eleventyNavigation:
   </div>
   <div class="impactvolt-flex-image" style="float: right; width: 40%; text-align: right;">
     <img
-      src="images/profiel-1-1024x683.jpg"
+      src="/images/profiel-1-1024x683.jpg"
       alt="Lieke Gilissen"
       style="max-width: 100%; height: auto; border-radius: 8px;"
     />

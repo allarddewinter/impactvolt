@@ -1,12 +1,11 @@
 {
-	"name": "Example Site",
+	"name": "ImpactVolt",
 	"formspark_id": null,
 	"botpoison_public_key": null,
 	"url": "https://impactvolt.nl",
 	"socials": {
 		"LinkedIn": "https://www.linkedin.com/in/liekegilissen/",
-		"WhatsApp": "https://wa.me/31653469461",
-		"RSS": "/feed.xml"
+		"WhatsApp": "https://wa.me/31653469461"
 	},
 	"sticky_mobile_nav": true,
 	"horizontal_nav": true,

@@ -29,7 +29,7 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
         </blockquote>
     </div>
     <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
-        <img src="images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <img src="/images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>
 
@@ -45,7 +45,7 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
         </blockquote>
     </div>
     <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
-        <img src="images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <img src="/images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>
 
@@ -61,7 +61,7 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
         </blockquote>
     </div>
     <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
-        <img src="images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <img src="/images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>
 
@@ -77,7 +77,7 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
         </blockquote>
     </div>
     <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
-        <img src="images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <img src="/images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>
 
@@ -93,6 +93,6 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
         </blockquote>
     </div>
     <div class="impactvolt-flex-image" style="width: 40%; text-align: right;">
-        <img src="images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <img src="/images/impactvolt_logo.png" alt="Lieke Gilissen" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
 </div>

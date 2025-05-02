@@ -1,4 +1,4 @@
-![impactvolt logo](images/impactvolt_logo.png)
+![impactvolt logo](/images/impactvolt_logo.png)
 
 ## Klaar voor Impact?
 
