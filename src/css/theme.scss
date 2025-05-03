@@ -22,7 +22,6 @@
   --color-text-secondary: #666666;         // Lighter grey (Subdued text)
   --color-link: #009688;                    // Teal (Links)
   --color-secondary: #FFCC00;               // Yellow (Accent)
-  // Use color.adjust for darkening/lightening inside variable definitions
   --color-secondary-accent: #{color.adjust(#FFCC00, $lightness: -10%)}; // Darker Yellow
 
   // -- Layout & Borders --
@@ -47,11 +46,11 @@ body {
   color: var(--color-text);
   font-family: var(--font-family-base);
   font-weight: var(--font-weight-regular);
-  line-height: 1.8; // Added from style.scss analysis
+  line-height: 1.8;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-base); // Use base family
+  font-family: var(--font-family-base);
   color: var(--color-bg-secondary);
   font-weight: var(--font-weight-bold);
   margin-top: 1.5rem;
@@ -59,10 +58,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, ol {
-  margin-bottom: 1.25rem; // Standard spacing
+  margin-bottom: 1.25rem;
 }
 
-// Limit line length for readability in main content areas
 article.content p,
 article.content ul,
 article.content ol {
@@ -70,17 +68,16 @@ article.content ol {
 }
 
 ul, ol {
-  padding-left: 1.5rem; // Adjust default list padding if needed
+  padding-left: 1.5rem;
 }
 
 a {
   color: var(--color-link);
   text-decoration: none;
-  transition: color 0.3s ease; // Only transition color by default
+  transition: color 0.3s ease;
 
   &:hover {
-    // Use color.adjust with hex code directly
-    color: color.adjust(#009688, $lightness: -10%); // Slightly darker teal
+    color: color.adjust(#009688, $lightness: -10%);
     text-decoration: underline;
   }
 }
@@ -92,7 +89,6 @@ header {
   background: var(--color-bg-secondary);
   color: white;
   box-shadow: var(--box-shadow);
-  // Add specific padding/margin rules here or rely on base.html layout
 
   h1 {
     color: white;
@@ -104,23 +100,21 @@ header {
 
 nav {
   background: white;
-  border: none; // Original had border:none
+  border: none;
   box-shadow: var(--box-shadow);
-  border-bottom: 2px solid var(--color-secondary); // Yellow accent border
+  border-bottom: 2px solid var(--color-secondary);
 
   a {
     font-family: var(--font-family-base);
     font-weight: var(--font-weight-semibold);
 
     &:hover {
-      color: var(--color-secondary); // Hover to yellow
-      text-decoration: none; // Remove underline on hover if desired for nav
+      color: var(--color-secondary);
+      text-decoration: none;
     }
 
     &.active {
-      color: var(--color-secondary); // Active link is yellow
-      // Add border only if needed, can look cleaner without underline sometimes
-      // border-bottom: 2px solid var(--color-secondary);
+      color: var(--color-secondary);
     }
   }
 }
@@ -129,23 +123,23 @@ article {
   background: white;
   border: var(--border);
   box-shadow: var(--box-shadow);
-  border-radius: var(--outer-border-radius); // Add radius to articles
-  padding: 1.5rem; // Add default padding
+  border-radius: var(--outer-border-radius);
+  padding: 1.5rem;
 }
 
 footer {
   background: var(--color-bg-secondary);
   color: white;
-  padding: 1rem; // Ensure consistent padding
-  border-radius: var(--outer-border-radius); // Added from style.scss
+  padding: 1rem;
+  border-radius: var(--outer-border-radius);
   border: var(--border);
   text-align: center;
 
   a {
-    color: var(--color-secondary); // Yellow links in footer
+    color: var(--color-secondary);
 
     &:hover {
-      color: color.adjust(#FFCC00, $lightness: 10%); // Lighter yellow
+      color: color.adjust(#FFCC00, $lightness: 10%);
     }
   }
 }
@@ -159,24 +153,23 @@ button, input[type="submit"] {
   border: none;
   font-family: var(--font-family-base);
   font-weight: var(--font-weight-semibold);
-  padding: 0.75rem 1.5rem; // Standardize padding
-  border-radius: var(--outer-border-radius); // Consistent radius
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--outer-border-radius);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    background: color.adjust(#009688, $lightness: -10%); // Darker teal
+    background: color.adjust(#009688, $lightness: -10%);
     transform: translateY(-2px);
   }
 
   &:disabled {
-    background: #ccc; // Simple disabled style
+    background: #ccc;
     cursor: not-allowed;
     transform: none;
   }
 }
 
-// Add basic styling for inputs if mvp.css doesn't cover enough
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -189,7 +182,7 @@ select {
   border-radius: var(--outer-border-radius-small);
   width: 100%;
   margin-bottom: 1rem;
-   box-sizing: border-box; // Include padding and border in element's total width/height
+   box-sizing: border-box;
 }
 
 label {
@@ -203,94 +196,91 @@ label {
    ========================================================================== */
 
 /* --- CTA Link Span --- */
-.cta-link { // Style for the span within a link e.g., [<span class="cta-link">Link Text</span>](/url/)
+.cta-link {
   text-decoration: underline;
   text-decoration-thickness: 3px;
-  text-decoration-color: var(--color-secondary); // Use yellow accent
+  text-decoration-color: var(--color-secondary);
   transition: text-decoration-color 0.3s ease;
 
-  a:hover & { // Target the span when the parent link is hovered
-     text-decoration-color: color.adjust(#FFCC00, $lightness: -10%); // Darker yellow
+  a:hover & {
+     text-decoration-color: color.adjust(#FFCC00, $lightness: -10%);
   }
 }
 
-/* --- General Quote Block (Homepage - .impactvolt-quote-block) --- */
-.impactvolt-quote-block {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start; // Align text top, image center
-  gap: 1.5rem;
-  margin: 1.5rem 0; // Consistent margins
-  background-color: rgba(0, 150, 136, 0.05); // Very light teal background
-  border-left: 4px solid var(--color-secondary); // Yellow accent border
+/* --- Quote Block (Homepage - Float based) --- */
+blockquote.impactvolt-quote-block {
+  // Overall block styling
+  margin: 1.5rem 0;
+  background-color: rgba(0, 150, 136, 0.05); // Light teal bg remains
+  border-left: 4px solid var(--color-secondary); // Yellow accent border remains
   padding: 1.5rem;
   border-radius: var(--outer-border-radius-small);
-  overflow: hidden;
+  overflow: auto; // Contains the float
 
-  // Text content styling within the quote block
-  .impactvolt-flex-text {
-    flex: 3; // ~60% width ratio
-    min-width: 250px;
-    font-style: italic; // Main quote text is italic
-    color: var(--color-text);
-
-    // Spacing for the attribution (replaces <br><br>)
-    strong {
-      display: block; // To accept margin-top
-      margin-top: 1rem; // Space above attribution
-      font-style: normal; // Ensure attribution is not italic
-      font-weight: var(--font-weight-bold);
-    }
-  }
-
-  // Image styling within the quote block
-  .impactvolt-flex-image {
-    flex: 2; // ~40% width ratio
-    min-width: 200px;
-    align-self: center; // Vertically center image in block
-    margin-left: auto; // Push to the right
-    max-width: 400px; // Max width constraint for large screens
+  // Image Wrapper - Floated right
+  .flow-image-wrapper {
+    float: right;
+    width: 38%;            // Adjust percentage carefully
+    max-width: 380px;      // Adjust max pixel width
+    margin-left: 1.5rem;   // Space between text and image
+    margin-bottom: 0.5rem; // Space below image for text flow
+    margin-top: 0.25rem;
 
     img {
       display: block;
       max-width: 100%;
       height: auto;
       border-radius: 4px;
-      margin-left: auto; // Ensure image aligns right within its container
     }
   }
 
-  /* Responsive adjustments for the main quote block */
+  // Quote Text Paragraph
+  p.quote-text {
+    font-style: italic; // Keep quote italic
+    color: var(--color-text);
+    margin-bottom: 1rem; // Space before attribution
+     max-width: none; // Allow text to flow fully
+  }
+
+  // Attribution Paragraph
+  p.attribution {
+    font-style: normal; // Attribution not italic
+    text-align: right; // Align right, often looks good under floated right image
+    margin-top: 1rem;
+    margin-bottom: 0; // No extra space after attribution
+
+    strong {
+      font-weight: var(--font-weight-bold);
+    }
+  }
+
+   // Clear headings that might follow this block
+   + h1, + h2, + h3, + h4, + h5, + h6 {
+     clear: both;
+   }
+
+  /* Responsive adjustments for the quote block */
   @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center; // Center stacked items
-    gap: 1rem;
     padding: 1rem;
 
-    .impactvolt-flex-text,
-    .impactvolt-flex-image {
-      flex: 1 1 auto;
-      width: 100%;
-      text-align: center;
-      align-self: auto;
-      margin-left: 0;
-      max-width: 100%;
+    .flow-image-wrapper {
+      float: none;           // Remove float
+      width: auto;           // Reset width
+      max-width: 80%;        // Mobile size constraint
+      margin: 0 auto 1rem auto; // Center the image container block
     }
 
-    .impactvolt-flex-image {
-      order: 1; // Image first on mobile
-      max-width: 80%; // Mobile image size limit (percentage based)
-      margin-left: auto;    // **** ADDED: Center the container ****
-      margin-right: auto;   // **** ADDED: Center the container ****
-      margin-bottom: 1rem; // Space below image when first
+    p.quote-text,
+    p.attribution {
+      text-align: center; // Center quote and attribution on mobile
+      max-width: 95%;   // Optional text width limit on mobile
+      margin-left: auto;  // Center the paragraph blocks themselves
+      margin-right: auto;
     }
 
-    .impactvolt-flex-text {
-       font-style: italic; // Keep it italic
-       text-align: center;
-       max-width: 95%;
-       margin: 0 auto; // Center the text block itself
-    }
+     p.attribution {
+        margin-top: 1rem; // Keep space above attribution
+     }
   }
 }
 
@@ -298,14 +288,14 @@ label {
 blockquote.experience-block {
   // background: var(--color-bg-main);
   border: var(--border);
-  border-left: 4px solid var(--color-secondary); // Yellow accent border
+  border-left: 4px solid var(--color-secondary);
   padding: 1.5rem;
   border-radius: var(--outer-border-radius);
   margin: 1.5rem 0;
   box-shadow: var(--box-shadow);
-  font-style: normal; // CRITICAL: Override default italic
+  font-style: normal; // Override default italic
 
-  .impactvolt-flex-container {
+  .impactvolt-flex-container { // Uses Flexbox internally
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -313,129 +303,84 @@ blockquote.experience-block {
   }
 
   .impactvolt-flex-text {
-    flex: 7; // ~70% width ratio
+    flex: 7;
     min-width: 250px;
 
-    p {
-      margin-top: 0;
-      font-weight: var(--font-weight-semibold); // Slightly less bold than h-tags
-    }
-
-    ul {
-      padding-left: 1.2rem;
-      margin-bottom: 0;
-    }
+    p { margin-top: 0; font-weight: var(--font-weight-semibold); }
+    ul { padding-left: 1.2rem; margin-bottom: 0; }
   }
 
-  .impactvolt-flex-image {
-    flex: 3; // ~30% width ratio
+  .impactvolt-flex-image { // Logo
+    flex: 3;
     min-width: 100px;
-    max-width: 180px; // Constraint logo size
+    max-width: 180px;
     margin-left: auto;
 
-    img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
+    img { display: block; max-width: 100%; height: auto; border-radius: 4px; }
   }
 
   /* Responsive adjustments */
   @media (max-width: 768px) {
     padding: 1rem;
 
-    .impactvolt-flex-container {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
+    .impactvolt-flex-container { flex-direction: column; align-items: center; gap: 1rem;}
 
     .impactvolt-flex-text,
-    .impactvolt-flex-image {
-      flex: 1 1 auto;
-      width: 100%;
-      max-width: 100%;
-      margin-left: 0;
-      text-align: center; // Center outer container text alignment
-    }
+    .impactvolt-flex-image { flex: 1 1 auto; width: 100%; max-width: 100%; margin-left: 0;}
 
     .impactvolt-flex-image {
-      order: -1;
-      max-width: 150px;
-      margin-left: auto;   // Center container
-      margin-right: auto;  // Center container
-      margin-bottom: 1rem;
+        order: -1; max-width: 150px; margin: 0 auto 1rem auto; // Centered
     }
 
     .impactvolt-flex-text {
-      text-align: left; // **** CHANGED: Keep text content left-aligned ****
-      p { // Ensure paragraph itself isn't constrained if text is left
-         text-align: left;
-      }
-      ul {
-        display: inline-block; // Keep list taking only needed width
-        text-align: left;      // Keep list items aligned left
-        padding-left: 0.5rem;
-      }
+      text-align: left; // Keep exp text left-aligned
+      ul { display: inline-block; text-align: left; padding-left: 0.5rem; }
     }
   }
 }
 
-/* --- Content + Image Block (Generic - .content-image-block) --- */
+/* --- Content + Image Block (Generic - Float based) --- */
 .content-image-block {
-  margin: 1.5rem 0; // Standard block margin
-  overflow: auto;   // Contains the float (clearfix alternative)
+  margin: 1.5rem 0;
+  overflow: auto; // Contains float
 
-  // Wrapper for the floated image
   .flow-image-wrapper {
-    float: right;          // Float the image container to the right
-    width: 35%;            // Approx width for the image (adjust % as needed)
-    max-width: 350px;      // Max pixel width constraint (adjust px as needed)
-    margin-left: 1.5rem;   // Space to the left of the image (between text and image)
-    margin-bottom: 0.5rem; // Space below the image before text flows under
-    margin-top: 0.25rem;   // Slight space above image if needed
+    float: right;
+    width: 35%;
+    max-width: 350px;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.25rem;
 
-    img {
-      display: block;      // Remove extra space below image
-      max-width: 100%;     // Image scales within its container
-      height: auto;
-      border-radius: 8px; // Keep the desired radius
-    }
+    img { display: block; max-width: 100%; height: auto; border-radius: 8px;}
   }
 
-  // Text content styling (paragraphs, etc. inside the block)
   p {
-    // Text will naturally flow around the floated element
-    // Ensure base paragraph styles (like max-width) are applied
     color: var(--color-text);
     font-style: normal;
-    margin-bottom: 1rem; // Standard paragraph spacing
-    max-width: none; // Override the global text max-width if needed when flowing
+    margin-bottom: 1rem;
+    max-width: none; // Override global text limit if needed for flow
 
-    strong {
-      font-weight: var(--font-weight-bold);
-    }
+    strong { font-weight: var(--font-weight-bold); }
   }
-  // Clear heading margins if they directly follow the float container logic
-   h2, h3, h4, h5, h6 {
-     clear: both; // Ensure headings after this block start below it
+   + h1, + h2, + h3, + h4, + h5, + h6 { // Clear headings following this block
+     clear: both;
    }
 
-  /* Responsive adjustments - Remove float and stack */
+  /* Responsive adjustments */
   @media (max-width: 768px) {
     .flow-image-wrapper {
-      float: none;           // Remove the float
-      width: auto;           // Let width be determined by max-width
-      max-width: 80%;        // Size constraint for mobile
-      margin: 0 auto 1rem auto; // Center the image block (top, sides, bottom)
+      float: none;
+      width: auto;
+      max-width: 80%;
+      margin: 0 auto 1rem auto; // Center image container
     }
 
     p {
-      text-align: left;      // Ensure text remains left-aligned
-      max-width: 95%;      // Slight width constraint on mobile? Optional.
-      margin-left: auto;     // Center paragraph block if max-width is used
-      margin-right: auto;    // Center paragraph block if max-width is used
+      text-align: left; // Keep text left-aligned
+      max-width: 95%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
@@ -448,19 +393,17 @@ button:focus,
 input:focus,
 textarea:focus,
 select:focus {
-  // Hide default if adding custom visible styles, but rely on focus-visible if possible
   outline: none;
 }
 
-// Use focus-visible for modern browsers; provides focus styles mainly for keyboard users
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 2px solid var(--color-link); // Teal outline
+  outline: 2px solid var(--color-link);
   outline-offset: 2px;
-  box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.2); // Subtle glow
+  box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.2);
 }
 
 /* ==========================================================================
@@ -470,25 +413,14 @@ select:focus-visible {
 /* --- Scrollbar Styling --- */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--color-bg-secondary) var(--color-bg); // Teal thumb, Light grey track
+  scrollbar-color: var(--color-bg-secondary) var(--color-bg);
 
-  &::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: var(--color-bg); // Light grey track
-    border-radius: 4px;
-  }
-
+  &::-webkit-scrollbar { width: 8px; height: 8px; }
+  &::-webkit-scrollbar-track { background: var(--color-bg); border-radius: 4px; }
   &::-webkit-scrollbar-thumb {
-    background-color: var(--color-bg-secondary); // Teal thumb
+    background-color: var(--color-bg-secondary);
     border-radius: 4px;
-    border: 1px solid var(--color-bg); // Add tiny border matching track color for definition
-
-    &:hover {
-      background-color: var(--color-secondary); // Yellow thumb on hover
-    }
+    border: 1px solid var(--color-bg);
+    &:hover { background-color: var(--color-secondary); }
   }
 }
