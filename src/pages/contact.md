@@ -14,4 +14,4 @@ eleventyNavigation:
 
 Heeft u vragen over de energietransitie, wilt u sparren over de mogelijkheden voor uw organisatie, of bent u benieuwd hoe ImpactVolT u concreet kan helpen? Ik hoor graag van u!
 
-U kunt contact opnemen via de gegevens aan de rechterzijde of onderaan deze pagina. Ik neem zo spoedig mogelijk contact met u op.
+U kunt contact opnemen via de gegevens elders op deze pagina. Ik neem zo spoedig mogelijk contact met u op.
