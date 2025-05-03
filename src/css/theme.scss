@@ -384,71 +384,58 @@ blockquote.experience-block {
 
 /* --- Content + Image Block (Generic - .content-image-block) --- */
 .content-image-block {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start; // Align text top, image center
-  gap: 1.5rem;
   margin: 1.5rem 0; // Standard block margin
-  // No special background or border needed
-  overflow: hidden;
+  overflow: auto;   // Contains the float (clearfix alternative)
 
-  // Text content styling
-  .impactvolt-flex-text {
-    flex: 3; // ~60% width ratio (adjust as needed)
-    min-width: 250px;
-    color: var(--color-text); // Ensure standard text color
-    font-style: normal;      // Ensure not italic
-
-    strong { // Style bold text if needed
-       font-weight: var(--font-weight-bold);
-    }
-  }
-
-  // Image styling
-  .impactvolt-flex-image {
-    flex: 2; // ~40% width ratio (adjust as needed)
-    min-width: 200px;
-    align-self: center; // Vertically center image
-    margin-left: auto; // Push to the right
-    max-width: 400px; // Max width constraint for large screens
+  // Wrapper for the floated image
+  .flow-image-wrapper {
+    float: right;          // Float the image container to the right
+    width: 35%;            // Approx width for the image (adjust % as needed)
+    max-width: 350px;      // Max pixel width constraint (adjust px as needed)
+    margin-left: 1.5rem;   // Space to the left of the image (between text and image)
+    margin-bottom: 0.5rem; // Space below the image before text flows under
+    margin-top: 0.25rem;   // Slight space above image if needed
 
     img {
-      display: block;
-      max-width: 100%;
+      display: block;      // Remove extra space below image
+      max-width: 100%;     // Image scales within its container
       height: auto;
-      border-radius: 8px; // Keep the radius from original example
-      margin-left: auto;
+      border-radius: 8px; // Keep the desired radius
     }
   }
 
-  /* Responsive adjustments */
+  // Text content styling (paragraphs, etc. inside the block)
+  p {
+    // Text will naturally flow around the floated element
+    // Ensure base paragraph styles (like max-width) are applied
+    color: var(--color-text);
+    font-style: normal;
+    margin-bottom: 1rem; // Standard paragraph spacing
+    max-width: none; // Override the global text max-width if needed when flowing
+
+    strong {
+      font-weight: var(--font-weight-bold);
+    }
+  }
+  // Clear heading margins if they directly follow the float container logic
+   h2, h3, h4, h5, h6 {
+     clear: both; // Ensure headings after this block start below it
+   }
+
+  /* Responsive adjustments - Remove float and stack */
   @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center; // Center stacked items
-    gap: 1rem;
-
-    .impactvolt-flex-text,
-    .impactvolt-flex-image {
-      flex: 1 1 auto;
-      width: 100%;
-      // Remove text-align: center from here so text defaults to left
-      align-self: auto;
-      margin-left: 0;
-      max-width: 100%;
+    .flow-image-wrapper {
+      float: none;           // Remove the float
+      width: auto;           // Let width be determined by max-width
+      max-width: 80%;        // Size constraint for mobile
+      margin: 0 auto 1rem auto; // Center the image block (top, sides, bottom)
     }
 
-    .impactvolt-flex-image {
-      order: -1; // Image first on mobile
-      max-width: 80%; // Mobile image size limit
-      margin-left: auto;   // Center the container
-      margin-right: auto;   // Center the container
-      margin-bottom: 1rem; // Space below image
-    }
-
-    .impactvolt-flex-text {
-      text-align: left; // **** ADDED: Keep text left-aligned on mobile ****
-      max-width: 95%;
-      margin: 0 auto; // Center the text block itself though
+    p {
+      text-align: left;      // Ensure text remains left-aligned
+      max-width: 95%;      // Slight width constraint on mobile? Optional.
+      margin-left: auto;     // Center paragraph block if max-width is used
+      margin-right: auto;    // Center paragraph block if max-width is used
     }
   }
 }

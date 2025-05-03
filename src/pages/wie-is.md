@@ -10,18 +10,17 @@ eleventyNavigation:
 
 # ImpactVolt: Samen op weg naar een duurzaam energielandschap
 
-<div class="content-image-block"> 
-  <div class="impactvolt-flex-container">
-    <div class="impactvolt-flex-text">
-      Ik ben <strong>Lieke Gilissen</strong>, en ik heb <strong>ImpactVolt</strong> opgericht met als doel om de energietransitie te versnellen. Ik geloof dat we samen de overstap kunnen maken naar een volledig duurzame energievoorziening, en ik wil u daar graag bij helpen. Dat is niet alleen essentieel voor de toekomst van onze planeet, maar biedt ook kansen voor uw organisatie.
-    </div>
-    <div class="impactvolt-flex-image">
-      <img
-        src="/images/profiel-1-1024x683.jpg"
-        alt="Lieke Gilissen"
-      />
-    </div>
+<div class="content-image-block">
+  <div class="flow-image-wrapper">
+     <img
+       src="/images/profiel-1-1024x683.jpg"
+       alt="Lieke Gilissen"
+       loading="lazy" decoding="async"
+     />
   </div>
+  <p>
+    Ik ben <strong>Lieke Gilissen</strong>, en ik heb <strong>ImpactVolt</strong> opgericht met als doel om de energietransitie te versnellen. Ik geloof dat we samen de overstap kunnen maken naar een volledig duurzame energievoorziening, en ik wil u daar graag bij helpen. Dat is niet alleen essentieel voor de toekomst van onze planeet, maar biedt ook kansen voor uw organisatie.
+  </p>
 </div>
 
 ## De energietransitie: een uitdaging én een kans
