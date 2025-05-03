@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ImpactVolt Theme Styles
+   ImpactVolt Theme Styles (theme.scss)
    ========================================================================== */
 
 // --- Modules ---
@@ -7,7 +7,7 @@
 @use 'sass:color';
 
 // --- Font Import ---
-// Updated import for Montserrat with specific weights
+// Use specific weights for Montserrat
 @import url('https://fonts.bunny.net/css?family=montserrat:wght@300;400;500;600;700&display=swap');
 
 /* ==========================================================================
@@ -22,45 +22,65 @@
   --color-text-secondary: #666666;         // Lighter grey (Subdued text)
   --color-link: #009688;                    // Teal (Links)
   --color-secondary: #FFCC00;               // Yellow (Accent)
-  --color-secondary-accent: #{darken(#FFCC00, 10%)}; // Darker Yellow
+  // Use color.adjust for darkening/lightening inside variable definitions
+  --color-secondary-accent: #{color.adjust(#FFCC00, $lightness: -10%)}; // Darker Yellow
 
   // -- Layout & Borders --
   --outer-border-radius: 4px;
   --outer-border-radius-small: 2px;
   --border: 1px solid rgba(0, 150, 136, 0.2); // Subtle teal border
   --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --content-max-width: 75ch; // Max width for readable text lines
 
   // -- Typography --
-  // Use the single Montserrat family with weights
-  --font-family-heading: 'Montserrat', sans-serif;
-  --font-family-body: 'Montserrat', sans-serif;
+  --font-family-base: 'Montserrat', sans-serif; // Use single family name
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }
 
 /* ==========================================================================
-   Base Styles
+   Base Styles & Typography
    ========================================================================== */
 body {
   background: var(--color-bg);
   color: var(--color-text);
-  font-family: var(--font-family-body);
-  font-weight: 400; // Default body text weight
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.8; // Added from style.scss analysis
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-heading);
+  font-family: var(--font-family-base); // Use base family
   color: var(--color-bg-secondary);
-  font-weight: 700; // Bold headings
+  font-weight: var(--font-weight-bold);
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+}
+
+p, ul, ol {
+  margin-bottom: 1.25rem; // Standard spacing
+}
+
+// Limit line length for readability in main content areas
+article.content p,
+article.content ul,
+article.content ol {
+   max-width: var(--content-max-width);
+}
+
+ul, ol {
+  padding-left: 1.5rem; // Adjust default list padding if needed
 }
 
 a {
   color: var(--color-link);
   text-decoration: none;
-  transition: color 0.3s ease, text-decoration 0.3s ease; // Simplified transition
+  transition: color 0.3s ease; // Only transition color by default
 
   &:hover {
-    color: color.adjust(#009688, $blackness: 10%); // Use the teal hex code directly
+    // Use color.adjust with hex code directly
+    color: color.adjust(#009688, $lightness: -10%); // Slightly darker teal
     text-decoration: underline;
   }
 }
@@ -72,11 +92,12 @@ header {
   background: var(--color-bg-secondary);
   color: white;
   box-shadow: var(--box-shadow);
+  // Add specific padding/margin rules here or rely on base.html layout
 
   h1 {
     color: white;
     text-align: center;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     border-bottom: none;
   }
 }
@@ -88,16 +109,18 @@ nav {
   border-bottom: 2px solid var(--color-secondary); // Yellow accent border
 
   a {
-    font-family: var(--font-family-heading);
-    font-weight: 600; // Semi-bold nav links
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-semibold);
 
     &:hover {
       color: var(--color-secondary); // Hover to yellow
+      text-decoration: none; // Remove underline on hover if desired for nav
     }
 
     &.active {
       color: var(--color-secondary); // Active link is yellow
-      border-bottom: 2px solid var(--color-secondary); // Underline active link
+      // Add border only if needed, can look cleaner without underline sometimes
+      // border-bottom: 2px solid var(--color-secondary);
     }
   }
 }
@@ -106,18 +129,23 @@ article {
   background: white;
   border: var(--border);
   box-shadow: var(--box-shadow);
-  // Ensure padding is defined elsewhere (e.g., in style.scss or specific layout CSS)
+  border-radius: var(--outer-border-radius); // Add radius to articles
+  padding: 1.5rem; // Add default padding
 }
 
 footer {
   background: var(--color-bg-secondary);
   color: white;
+  padding: 1rem; // Ensure consistent padding
+  border-radius: var(--outer-border-radius); // Added from style.scss
+  border: var(--border);
+  text-align: center;
 
   a {
     color: var(--color-secondary); // Yellow links in footer
 
     &:hover {
-      color: color.adjust(#FFCC00, $lightness: 10%); // Lighter yellow on hover
+      color: color.adjust(#FFCC00, $lightness: 10%); // Lighter yellow
     }
   }
 }
@@ -129,53 +157,90 @@ button, input[type="submit"] {
   background: var(--color-bg-secondary);
   color: white;
   border: none;
-  font-family: var(--font-family-heading);
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.3s ease; // Added background-color
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  padding: 0.75rem 1.5rem; // Standardize padding
+  border-radius: var(--outer-border-radius); // Consistent radius
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    background: color.adjust(#009688, $blackness: 10%); // Darker teal on hover
+    background: color.adjust(#009688, $lightness: -10%); // Darker teal
     transform: translateY(-2px);
   }
+
+  &:disabled {
+    background: #ccc; // Simple disabled style
+    cursor: not-allowed;
+    transform: none;
+  }
+}
+
+// Add basic styling for inputs if mvp.css doesn't cover enough
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+  font-family: inherit;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: var(--outer-border-radius-small);
+  width: 100%;
+  margin-bottom: 1rem;
+   box-sizing: border-box; // Include padding and border in element's total width/height
+}
+
+label {
+  font-weight: var(--font-weight-semibold);
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 /* ==========================================================================
    Components
    ========================================================================== */
 
+/* --- CTA Link Span --- */
+.cta-link { // Style for the span within a link e.g., [<span class="cta-link">Link Text</span>](/url/)
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--color-secondary); // Use yellow accent
+  transition: text-decoration-color 0.3s ease;
+
+  a:hover & { // Target the span when the parent link is hovered
+     text-decoration-color: color.adjust(#FFCC00, $lightness: -10%); // Darker yellow
+  }
+}
+
 /* --- General Quote Block (Homepage - .impactvolt-quote-block) --- */
 .impactvolt-quote-block {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start; // Align items to top
+  align-items: flex-start; // Align text top, image center
   gap: 1.5rem;
-  margin-bottom: 2rem;
+  margin: 1.5rem 0; // Consistent margins
   background-color: rgba(0, 150, 136, 0.05); // Very light teal background
   border-left: 4px solid var(--color-secondary); // Yellow accent border
   padding: 1.5rem;
   border-radius: var(--outer-border-radius-small);
   overflow: hidden;
 
-  // Applies if you kept the .impactvolt-flex-container inside
-  // Otherwise remove this rule.
-  .impactvolt-flex-container {
-    display: contents; // Makes the container 'disappear' for layout, children act as direct flex items
-  }
-
   // Text content styling within the quote block
   .impactvolt-flex-text {
     flex: 3; // ~60% width ratio
     min-width: 250px;
-    font-style: italic; // Ensure main quote text is italic
+    font-style: italic; // Main quote text is italic
     color: var(--color-text);
 
-    // Reset any nested blockquote (though unlikely with current structure)
-     blockquote {
-        background: transparent;
-        border: none;
-        padding: 0;
-        margin: 0;
-     }
+    // Spacing for the attribution (replaces <br><br>)
+    strong {
+      display: block; // To accept margin-top
+      margin-top: 1rem; // Space above attribution
+      font-style: normal; // Ensure attribution is not italic
+      font-weight: var(--font-weight-bold);
+    }
   }
 
   // Image styling within the quote block
@@ -204,22 +269,24 @@ button, input[type="submit"] {
 
     .impactvolt-flex-text,
     .impactvolt-flex-image {
-      flex: 1 1 100%; // Full width on mobile
+      flex: 1 1 auto;
       width: 100%;
       text-align: center;
       align-self: auto;
       margin-left: 0;
-      max-width: 100%; // Reset max-width before applying mobile one
+      max-width: 100%;
     }
 
     .impactvolt-flex-image {
       order: 1; // Image first on mobile
       max-width: 80%; // Mobile image size limit (percentage based)
+      margin-left: auto;    // **** ADDED: Center the container ****
+      margin-right: auto;   // **** ADDED: Center the container ****
       margin-bottom: 1rem; // Space below image when first
     }
 
     .impactvolt-flex-text {
-       font-style: italic;  // Keep it italic
+       font-style: italic; // Keep it italic
        text-align: center;
        max-width: 95%;
        margin: 0 auto; // Center the text block itself
@@ -229,32 +296,29 @@ button, input[type="submit"] {
 
 /* --- Experience Block Styling (blockquote.experience-block) --- */
 blockquote.experience-block {
-  // Base styling for the block
-  // background: var(--color-bg-main); // Use main background color (white)
+  // background: var(--color-bg-main);
   border: var(--border);
   border-left: 4px solid var(--color-secondary); // Yellow accent border
   padding: 1.5rem;
-  border-radius: var(--outer-border-radius); // Use main radius
+  border-radius: var(--outer-border-radius);
   margin: 1.5rem 0;
   box-shadow: var(--box-shadow);
-  font-style: normal; // CRITICAL: Override default italic for experience blocks
+  font-style: normal; // CRITICAL: Override default italic
 
-  // Inner container for flex layout
   .impactvolt-flex-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center; // Vertically center text/logo
+    align-items: center;
     gap: 1.5rem;
   }
 
-  // Text content styling within the experience block
   .impactvolt-flex-text {
     flex: 7; // ~70% width ratio
     min-width: 250px;
 
     p {
       margin-top: 0;
-      font-weight: 600; // Ensure title is prominent
+      font-weight: var(--font-weight-semibold); // Slightly less bold than h-tags
     }
 
     ul {
@@ -263,54 +327,153 @@ blockquote.experience-block {
     }
   }
 
-  // Logo image styling within the experience block
   .impactvolt-flex-image {
     flex: 3; // ~30% width ratio
     min-width: 100px;
     max-width: 180px; // Constraint logo size
-    margin-left: auto; // Push logo to the right
+    margin-left: auto;
 
     img {
       display: block;
       max-width: 100%;
       height: auto;
-      border-radius: 4px; // Optional subtle radius
+      border-radius: 4px;
     }
   }
 
-  /* Responsive adjustments for experience blocks */
+  /* Responsive adjustments */
   @media (max-width: 768px) {
     padding: 1rem;
 
     .impactvolt-flex-container {
       flex-direction: column;
-      align-items: center; // Center stacked items
+      align-items: center;
       gap: 1rem;
     }
 
     .impactvolt-flex-text,
     .impactvolt-flex-image {
-      flex: 1 1 100%; // Full width on mobile
+      flex: 1 1 auto;
       width: 100%;
       max-width: 100%;
       margin-left: 0;
-      text-align: center;
+      text-align: center; // Center outer container text alignment
     }
 
     .impactvolt-flex-image {
-      order: -1; // Logo first on mobile
-      max-width: 150px; // Logo size on mobile
-      margin-bottom: 1rem; // Space below logo
+      order: -1;
+      max-width: 150px;
+      margin-left: auto;   // Center container
+      margin-right: auto;  // Center container
+      margin-bottom: 1rem;
     }
 
     .impactvolt-flex-text {
+      text-align: left; // **** CHANGED: Keep text content left-aligned ****
+      p { // Ensure paragraph itself isn't constrained if text is left
+         text-align: left;
+      }
       ul {
-        display: inline-block; // Prevent list taking full width
-        text-align: left; // Keep list items aligned left
+        display: inline-block; // Keep list taking only needed width
+        text-align: left;      // Keep list items aligned left
         padding-left: 0.5rem;
       }
     }
   }
+}
+
+/* --- Content + Image Block (Generic - .content-image-block) --- */
+.content-image-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; // Align text top, image center
+  gap: 1.5rem;
+  margin: 1.5rem 0; // Standard block margin
+  // No special background or border needed
+  overflow: hidden;
+
+  // Text content styling
+  .impactvolt-flex-text {
+    flex: 3; // ~60% width ratio (adjust as needed)
+    min-width: 250px;
+    color: var(--color-text); // Ensure standard text color
+    font-style: normal;      // Ensure not italic
+
+    strong { // Style bold text if needed
+       font-weight: var(--font-weight-bold);
+    }
+  }
+
+  // Image styling
+  .impactvolt-flex-image {
+    flex: 2; // ~40% width ratio (adjust as needed)
+    min-width: 200px;
+    align-self: center; // Vertically center image
+    margin-left: auto; // Push to the right
+    max-width: 400px; // Max width constraint for large screens
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px; // Keep the radius from original example
+      margin-left: auto;
+    }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center; // Center stacked items
+    gap: 1rem;
+
+    .impactvolt-flex-text,
+    .impactvolt-flex-image {
+      flex: 1 1 auto;
+      width: 100%;
+      // Remove text-align: center from here so text defaults to left
+      align-self: auto;
+      margin-left: 0;
+      max-width: 100%;
+    }
+
+    .impactvolt-flex-image {
+      order: -1; // Image first on mobile
+      max-width: 80%; // Mobile image size limit
+      margin-left: auto;   // Center the container
+      margin-right: auto;   // Center the container
+      margin-bottom: 1rem; // Space below image
+    }
+
+    .impactvolt-flex-text {
+      text-align: left; // **** ADDED: Keep text left-aligned on mobile ****
+      max-width: 95%;
+      margin: 0 auto; // Center the text block itself though
+    }
+  }
+}
+
+/* ==========================================================================
+   Accessibility
+   ========================================================================== */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  // Hide default if adding custom visible styles, but rely on focus-visible if possible
+  outline: none;
+}
+
+// Use focus-visible for modern browsers; provides focus styles mainly for keyboard users
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-link); // Teal outline
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.2); // Subtle glow
 }
 
 /* ==========================================================================
@@ -335,6 +498,7 @@ blockquote.experience-block {
   &::-webkit-scrollbar-thumb {
     background-color: var(--color-bg-secondary); // Teal thumb
     border-radius: 4px;
+    border: 1px solid var(--color-bg); // Add tiny border matching track color for definition
 
     &:hover {
       background-color: var(--color-secondary); // Yellow thumb on hover

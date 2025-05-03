@@ -15,14 +15,12 @@ eleventyNavigation:
   <div class="impactvolt-flex-container"> 
     <div class="impactvolt-flex-text">
       “De energiemarkt is complex en constant in beweging. Ik help organisaties succesvol te navigeren in deze dynamische wereld, met strategisch advies, projectmanagement en teamtransformatie.“
-      <br><br>
       <strong>Lieke Gilissen</strong>
     </div>
     <div class="impactvolt-flex-image">
       <img
         src="/images/profiel-1-1024x683.jpg"
         alt="Lieke Gilissen"
-        loading="lazy" decoding="async" /* Added performance attributes */
       />
     </div>
   </div>
@@ -42,15 +40,15 @@ kostenbesparing, efficiëntieverbetering of het realiseren van nieuwe kansen.
 consulting, projectmanagement en teamtransformatie.
 * **Heldere Communicatie:** Ik maak complexe materie begrijpelijk en vertaal strategie naar concrete actie.
 
-**[<span style="text-decoration: underline; text-decoration-thickness: .2em; text-decoration-color: #FFCC00;">Diensten</span>](/diensten)**
+**[<span class="cta-link">Diensten</span>](/diensten)**
 
 Bekijk het overzicht van mijn diensten en ontdek hoe ik u kan helpen uw specifieke uitdagingen in de energiemarkt aan te pakken.
 
-**[<span style="text-decoration: underline; text-decoration-thickness: 3px; text-decoration-color: #FFCC00;">Mijn Ervaring</span>](/ervaring)**
+**[<span class="cta-link">Mijn Ervaring</span>](/ervaring)**
 
 Ontdek mijn uitgebreide ervaring in de energiemarkt, met een beknopt overzicht van mijn belangrijkste rollen en prestaties.
 
-**[<span style="text-decoration: underline; text-decoration-thickness: 3px; text-decoration-color: #FFCC00;">Wie Is ImpactVolT</span>](/wie-is)**
+**[<span class="cta-link">Wie Is ImpactVolT</span>](/wie-is)**
 
 Leer meer over mijn achergrond, mijn visie op de energie transitie en mijn persoonlijke drijfveren.
 
