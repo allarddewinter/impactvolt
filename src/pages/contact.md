@@ -10,4 +10,6 @@ eleventyNavigation:
   order: 7
 ---
 
+# Laten we kennismaken
 
+Heeft u vragen over de energietransitie, wilt u sparren over de mogelijkheden voor uw organisatie, of bent u benieuwd hoe ImpactVolT u concreet kan helpen? Ik hoor graag van u!
