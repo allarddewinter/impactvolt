@@ -84,6 +84,22 @@ Hieronder een beknopt overzicht van mijn ervaring. Voor een volledig overzicht, 
 <blockquote class="experience-block">
     <div class="impactvolt-flex-container">
         <div class="impactvolt-flex-text">
+            <p><strong>Cyan Earth - Co-founder & Director (2016-2019)</strong></p>
+            <ul>
+                <li>Opzetten stichting inclusief statuten  en proposities.</li>
+                <li>Uitvoer consulting projecten ter support van NGOs  in ontwikkelingslanden (Madagascar en Rwanda) op gebied van duurzame energie.</li>
+                <li>Acquisitie voor projecten netwerk en collectie van donaties ter support van de projecten.</li>
+            </ul>
+        </div>
+        <div class="impactvolt-flex-image">
+            <img src="/images/logos/cyanearth.png" alt="Cyan earth Logo" loading="lazy" decoding="async">
+        </div>
+    </div>
+</blockquote>
+
+<blockquote class="experience-block">
+    <div class="impactvolt-flex-container">
+        <div class="impactvolt-flex-text">
              <p><strong>Nuon - Optimalisatie Asset Performance (2012 - 2016)</strong></p>
              <ul>
                  <li>Faciliteren van strategische sessies gericht op het verbeteren van asset management, resulterend in concrete verbeterplannen en optimalisaties.</li>
