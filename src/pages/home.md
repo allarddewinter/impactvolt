@@ -51,7 +51,7 @@ Ontdek mijn uitgebreide ervaring in de energiemarkt, met een beknopt overzicht v
 
 **[<span class="cta-link">Wie Is ImpactVolT</span>](/wie-is)**
 
-Leer meer over mijn achergrond, mijn visie op de energie transitie en mijn persoonlijke drijfveren.
+Leer meer over mijn achtergrond, mijn visie op de energie transitie en mijn persoonlijke drijfveren.
 
 ## [Wat de mensen zeggen](/reviews) 
 
