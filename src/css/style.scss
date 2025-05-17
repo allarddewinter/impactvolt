@@ -122,8 +122,9 @@ img {
 .image-wrapper {
   position: relative;
   display: block;
-  background-size: cover;
+  background-size: cover;      /* your LQIP blur behind */
   background-position: center;
+  aspect-ratio: 1 / 1;         /* modern browsers get a perfect square */
 }
 
 body > footer {
@@ -504,4 +505,28 @@ body {
       text-decoration: underline;
     }
   }
+}
+
+/* fallback for iOS-Safari that doesn’t support aspect-ratio pre-15.4 */
+@supports not (aspect-ratio: 1 / 1) {
+  .image-wrapper::before {
+    content: "";
+    display: block;
+    padding-top: 100%;         /* 1:1 aspect via old padding trick */
+  }
+}
+
+/* make the picture fill that square */
+.image-wrapper picture {
+  position: absolute;
+  inset: 0;                    /* top:0; right:0; bottom:0; left:0; */
+  display: block;
+}
+
+/* and size the img to fill it without distortion */
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;         /* or cover if you prefer a crop */
+  display: block;
 }
